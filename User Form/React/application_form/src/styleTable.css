@@ -1,0 +1,103 @@
+/* Table Container Styling */
+.table-container {
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #f5f7fa,
+    #c3cfe2
+  ); /* Subtle gradient background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Scroll support for smaller screens */
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Table Header Styling */
+.table thead {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5); /* Vibrant gradient */
+  color: white;
+}
+
+.table thead th {
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table Rows Styling */
+.table tbody tr {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Light gray */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #eef4fb; /* Light blue */
+}
+
+/* Row Hover Effect */
+.table tbody tr:hover {
+  background-color: #c3daf3; /* Soft blue */
+  transform: scale(1.02); /* Slight pop-out effect */
+}
+
+/* Table Data Styling */
+.table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* Title Styling */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #4b79a1; /* Deep blue */
+  margin-bottom: 20px;
+}
+
+.title span {
+  color: #f76a8c; /* Vibrant pink */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table thead {
+    display: none; /* Hide headers for smaller screens */
+  }
+
+  .table tbody tr {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: none;
+  }
+
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #5b86e5; /* Blue for labels */
+    margin-right: 10px;
+  }
+}

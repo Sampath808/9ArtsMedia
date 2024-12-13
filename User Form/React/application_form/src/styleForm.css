@@ -1,0 +1,90 @@
+/* Form Container Styling */
+.form-container {
+  max-width: 650px;
+  margin: 50px auto;
+  background: linear-gradient(
+    145deg,
+    #ffecd2,
+    #fcb69f
+  ); /* Vibrant gradient background */
+  border-radius: 15px;
+  padding: 25px 35px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Title */
+.form-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #f76a8c; /* Vibrant pink color */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Input Styling */
+input[type="text"],
+input[type="email"] {
+  border: 2px solid #ff9a8b; /* Coral color border */
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #ff758c; /* Darker coral on focus */
+  box-shadow: 0 0 8px rgba(255, 117, 140, 0.5); /* Soft coral glow */
+  outline: none;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #36d1dc,
+    #5b86e5
+  ); /* Cool gradient button */
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05); /* Slight pop-out effect on hover */
+  background: linear-gradient(90deg, #5b86e5, #36d1dc); /* Reverse gradient */
+}
+
+/* Label Styling */
+label {
+  color: #555;
+  font-weight: 500;
+}
+
+/* Spacing Adjustments */
+.form-row,
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+/* Extra Form Effects */
+input,
+button {
+  font-family: "Poppins", sans-serif; /* Modern font */
+}
+
+/* Add Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px 20px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+}
